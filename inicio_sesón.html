@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión Administrador</title>
+    <link rel="stylesheet" href="css/inicio_sesion.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.table.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 login-container">
+                <h2 class="text-center mb-4">¡Bienvenido Administrador!</h2>
+                <form action="procesar_login.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Usuario</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contra">Contraseña</label>
+                        <input type="password" class="form-control" id="contra" name="contra" required>
+                    </div>
+                    <a href="admin.html" type="submit" class="btn btn-primary btn-block">Iniciar sesión</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.x.x.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
